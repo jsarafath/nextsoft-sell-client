@@ -48,7 +48,7 @@ interface DataContextType {
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
 
 export const DataProvider = ({ children }: { children: ReactNode }) => {
   const [products, setProducts] = useState<Product[]>([]);

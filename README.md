@@ -63,5 +63,27 @@ src/
 This frontend is configured to communicate with the NexusSoft Express/MongoDB backend at `http://localhost:5000/api`. 
 If the backend is offline, the app features a **graceful fallback mechanism** that loads local mock data so the UI never breaks during development.
 
+## 🌍 Environment Variables
+
+To run this project, you will need to add the following environment variables to your `.env` file (if you have a deployed backend):
+
+`VITE_API_BASE_URL` (Optional, defaults to `http://localhost:5000/api`)
+
+## 📸 Screenshots
+
+*(You can add screenshots of your application here)*
+- **Home Page**
+- **Product Details**
+- **Admin Dashboard**
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+Feel free to fork the repository and submit pull requests.
+
+## 📄 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 ---
 *Designed with ❤️ for digital creators.*
