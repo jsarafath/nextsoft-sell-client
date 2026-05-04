@@ -1,6 +1,5 @@
 # NexusSoft - Premium Digital Storefront (Client) 🚀
 
-![NexusSoft Banner](./public/images/compressed/hero_illustration_medium.webp)
 
 Welcome to the frontend repository for **NexusSoft**, a modern, premium digital product storefront. This application is designed to provide a seamless, lag-free, and highly aesthetic user experience for purchasing digital software subscriptions, developer tools, and creative assets.
 
