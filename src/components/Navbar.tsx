@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Hexagon, User, LogOut, LayoutDashboard } from 'lucide-react';
+import { ShoppingCart, Hexagon, LogOut, LayoutDashboard } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
