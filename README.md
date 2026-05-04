@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# NexusSoft - Premium Digital Storefront (Client) 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![NexusSoft Banner](./public/images/compressed/hero_illustration_medium.webp)
 
-Currently, two official plugins are available:
+Welcome to the frontend repository for **NexusSoft**, a modern, premium digital product storefront. This application is designed to provide a seamless, lag-free, and highly aesthetic user experience for purchasing digital software subscriptions, developer tools, and creative assets.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Premium UI/UX:** Built with Tailwind CSS and Framer Motion for buttery-smooth animations, sleek glassmorphism effects, and dynamic layouts.
+- **Product Catalog:** Beautifully presented digital products with features, pricing, and dynamic filtering.
+- **Shopping Cart:** Fully functional cart system using React Context API.
+- **Simulated Authentication:** Login/Signup flow for users and administrators.
+- **Admin Dashboard:** A dedicated dashboard for admins to easily add new products and customer testimonials directly to the database.
+- **Performance Optimized:** Heavy CSS filters have been optimized using radial gradients to ensure 60fps scrolling on all devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Routing:** [React Router v7](https://reactrouter.com/)
+- **Language:** TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+*Note: To run the full application, you also need the **NexusSoft Backend Server** running on `localhost:5000`.*
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/JsArafath/nextsoft-sell-client.git
+   cd nextsoft-sell-client
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173` (or `5174` if the port is busy).
+
+## 📂 Folder Structure
+
+```text
+src/
+├── components/     # Reusable UI components (Navbar, Footer, Hero, ProductCard, etc.)
+├── context/        # React Context providers (AuthContext, CartContext, DataContext)
+├── data/           # Local fallback data for products and testimonials
+├── pages/          # Full page components (Home, Products, AdminDashboard, etc.)
+├── App.tsx         # Main application routing and layout wrapper
+└── index.css       # Global styles and Tailwind imports
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔌 Backend Integration
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This frontend is configured to communicate with the NexusSoft Express/MongoDB backend at `http://localhost:5000/api`. 
+If the backend is offline, the app features a **graceful fallback mechanism** that loads local mock data so the UI never breaks during development.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Designed with ❤️ for digital creators.*
