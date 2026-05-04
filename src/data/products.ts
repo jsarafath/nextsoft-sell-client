@@ -1,0 +1,71 @@
+import type { Product } from '../context/CartContext';
+
+export const products: Product[] = [
+  {
+    id: 'sub_1',
+    name: 'Pro Video Editor CC',
+    description: 'Industry-standard video editing software. Monthly subscription with cloud storage.',
+    price: 29.99,
+    features: ['4K rendering', 'Cloud sync', 'Premium templates', '24/7 Support'],
+    image: '/images/compressed/video_editor_software_1777893985142.webp',
+    isPopular: true,
+  },
+  {
+    id: 'sub_2',
+    name: 'Cloud Storage 1TB',
+    description: 'Secure, encrypted cloud storage for all your devices and files.',
+    price: 9.99,
+    features: ['1TB Space', 'End-to-end encryption', 'Auto backup', 'File sharing'],
+    image: '/images/compressed/cloud_storage_1777894002926.webp',
+  },
+  {
+    id: 'sub_3',
+    name: 'Developer IDE Ultimate',
+    description: 'The complete toolkit for full-stack developers. Yearly license.',
+    price: 149.99,
+    features: ['All languages supported', 'AI Code Assistant', 'Database tools', 'Git integration'],
+    image: '/images/compressed/developer_ide_1777894021222.webp',
+    isPopular: true,
+  },
+  {
+    id: 'sub_4',
+    name: 'Design Suite Premium',
+    description: 'Vector graphics, photo editing, and UI design tools in one package.',
+    price: 39.99,
+    features: ['Vector tools', 'Unlimited assets', 'Team collaboration', 'Cloud fonts'],
+    image: '/images/compressed/design_suite_1777894036603.webp',
+  },
+  {
+    id: 'sub_5',
+    name: 'CyberShield Pro Antivirus',
+    description: 'Advanced malware protection and network security for all your devices.',
+    price: 49.99,
+    features: ['Real-time scanning', 'VPN included', 'Identity protection', 'Zero-day defense'],
+    image: '/images/compressed/cyber_security_1777894060758.webp',
+  },
+  {
+    id: 'sub_6',
+    name: 'GlobalNet VPN Premium',
+    description: 'High-speed, secure, and untraceable internet access worldwide.',
+    price: 12.99,
+    features: ['No-log policy', '5000+ servers', 'Ad blocker', 'Unlimited bandwidth'],
+    image: '/images/compressed/vpn_premium_1777894074748.webp',
+  },
+  {
+    id: 'sub_7',
+    name: 'SEO Master Pro',
+    description: 'Complete analytics and keyword tracking suite for digital marketers.',
+    price: 79.99,
+    features: ['Keyword research', 'Competitor analysis', 'Backlink checker', 'Weekly reports'],
+    image: '/images/compressed/seo_master_1777894089723.webp',
+    isPopular: true,
+  },
+  {
+    id: 'sub_8',
+    name: 'TaskFlow Enterprise',
+    description: 'Agile project management and team collaboration software.',
+    price: 15.99,
+    features: ['Kanban boards', 'Time tracking', 'Custom workflows', 'Slack integration'],
+    image: '/images/compressed/task_flow_1777894104276.webp',
+  }
+];
